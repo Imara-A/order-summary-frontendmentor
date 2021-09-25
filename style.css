@@ -18,17 +18,27 @@
  font-family: 'Red Hat Display', sans-serif;
  
 }
+@media(max-width: 500px){
+    body{
+        background: url(images/pattern-background-mobile.svg) no-repeat;
+    }
+   
+}
+
+
+  
 
 body {
     z-index: 0;
-    background: url(images/pattern-background-mobile.svg)  no-repeat;
+    background: url(images/pattern-background-desktop.svg)  no-repeat;
     background-color: var(--Pale-blue);
 }
 
 .main{
     z-index: 1;
-    margin: 3rem 1.5rem;
+    width: 252px;
     height: 400px;
+   margin: 6rem auto;
     border-radius: 10px;
     border: 1px;
     background-color: #fff;
@@ -76,6 +86,14 @@ p{
     font-weight: 900;
 }
 
+.right-text:hover{
+    text-decoration: none;
+    color: rgb(125, 97, 252);
+    transition: 0.5s;
+}
+    
+
+
 .music{
     float: left;
     position: relative;
@@ -87,26 +105,26 @@ p{
     margin: 1rem .5rem;
     padding: .5rem;
     background-color: var(--Bright-blue);
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
     font-size: 12px;
     font-weight: 700;
     color: #fff;
+    box-shadow: 5px 4px 18px 2px rgba(153, 131, 250, 0.5), 0 6px 20px 0 rgba(64, 64, 65, 0.19);
+    transition: 0.5s;
+}
+
+.hero:hover{
+    background-color:rgb(125, 97, 252);
+    cursor: pointer;
 }
 
 .cancel{
     font-weight: 700;
 }
 
-.attribution{
-    position: absolute;
-    bottom: 1rem;
+.cancel:hover{
+    color: black;
+    cursor: pointer;
 }
-
-
-
-
-
-
-
 
